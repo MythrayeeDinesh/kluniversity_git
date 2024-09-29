@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<title>iFrame</title>
+<style>
+  input[type="number"]:out-of-range{
+    border: 2px solid red;
+  }
+  input[type="number"]:in-range{
+    border: 2px solid green;
+  }
+  input[type="email"]:invalid{
+    border: 2px solid red;
+  }
+  input[type="email"]::placeholder{
+    color: blue;
+  }
+  p::first-line{
+    text-decoration: underline;
+  }
+  p::first-letter{
+    font-size: 20px;
+    color: red;
+  }
+  p::before{
+    content: "KLU :";
+  }
+  p::after{
+    content: "End";
+  }
+  p::selection{
+    background-color: aqua;
+  }
+  
+  pre{
+    font-size: larger;
+  }
+  li::marker{
+    color: blueviolet;
+  }
+  .c1
+  {
+    list-style-type: none;
+  }
+  .c1 li::before{
+    content: "\2713";
+    color: red;
+    margin-right: 15px;
+  }
+</style>
+</head>
+<body>
+    <pre>Age :</pre>
+    <input type="number" placeholder="Enter Age" min="4" max="20" style="width: 340px; height: 20px; border-radius: 12px;">
+    <pre>Email:</pre>
+    <input type="email" placeholder="Enter email" style="width: 340px; height: 20px; border-radius: 12px;">
+    <pre>Message :</pre>
+    <p>
+        The Aston Martin Lagonda Taraf is a full-size luxury car with four doors that was manufactured in 2015 and 2016 by 
+        the British carmaker Aston Martin under its Lagonda marque. Aston Martin began developing the car in February 2014 at its design studio in Gaydon, Warwickshire. Development was completed eight months later, and the design of the car, based on the vertical–horizontal platform, was done by Marek Reichman. The car debuted in Dubai in December 2014, and production began in early 2015 at the Gaydon production facility. Initially, Aston Martin planned to manufacture 100 units exclusively for the Middle Eastern market,
+         but the plan expanded to include other markets and a total of 120 cars were produced. 
+    </p>
+    <ul>
+        <li>First Topic</li>
+        <li>Second Topic</li>
+        <li>Third Topic</li>
+        <li>Fourth Topic</li>
+        <li>Fifth Topic</li>
+    </ul>
+    <ul class="c1">
+        <li>First Topic</li>
+        <li>Second Topic</li>
+        <li>Third Topic</li>
+        <li>Fourth Topic</li>
+        <li>Fifth Topic</li>
+    </ul>
+ </body>
+</html>
