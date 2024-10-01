@@ -10,3 +10,26 @@
 .c3{
     font-size: 3em;
 }
+.percentage_cls{
+    width:400px;
+    height: 250px;
+    border:1px solid red;
+}
+.c4
+{
+    color: white;
+    width: 70%;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    background-color: blue;
+}
+.c5
+{
+    color: white;
+    width: 50vw;
+    background-color: blueviolet;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
