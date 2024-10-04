@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+.container__img {
+  flex: 1;
+  background-image: url(./KL_logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid rebeccapurple;
+}
+.container__text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container__text [class^=container__text__]:not(container__text__1) {
+  font-size: xx-large;
+}
+.container__text__1 {
+  font-size: 5vw;
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+  .container__text [class^=container__text__]:not(.container__text__1) {
+    display: none;
+  }
+  .container__text__1 {
+    font-size: 3vw;
+  }
+}/*# sourceMappingURL=rwd.css.map */

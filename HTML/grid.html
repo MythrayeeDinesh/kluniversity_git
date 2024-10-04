@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .body
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        .parent{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 10% 80% 10%;
+            grid-template-columns:15% 70% 15%;
+        }
+        
+        .header{
+            background-color: brown;
+            grid-column: 1/4;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .left-menu{
+            background-color: blueviolet;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .main-content{
+            background-color:cadetblue;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .right-menu{
+            background-color:cornflowerblue;
+            grid-column: 3/3;
+            grid-row: 2/3;
+        }
+
+        .footer{
+            background-color: yellowgreen;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">
+            <h1>HTML Headers </h1>
+        </div>
+
+        <div class="left-menu">Left Menu</div>
+
+        <div class="main-content">Main</div>
+
+        <div class="right-menu">Right Menu</div>
+
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
