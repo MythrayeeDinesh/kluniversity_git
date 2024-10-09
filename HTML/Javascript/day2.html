@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+</head>
+<body>
+    <script>
+        // const x=100;
+        // x=200;
+
+        let ar1 = [10,20,30,40,50];
+        //at()
+        document.write(ar1.at(0),ar1.at(-5),"<br>");
+        document.write(ar1.at(1),ar1.at(-4),"<br>");
+        document.write(ar1.at(2),ar1.at(-3),"<br>");
+        document.write(ar1.at(3),ar1.at(-2),"<br>");
+        document.write(ar1.at(4),ar1.at(-1),"<br>");
+
+        const arr1=[10,20,30,40,50];
+     //   arr1=[];
+    // arr1=[100,200,300]; //Error
+
+    // arr1[0] = 100;
+    // arr1[3]=400;     
+    // arr1[6]=600;
+    // console.table(arr1);
+
+        let obj1 = {
+            frontend : "React",
+            backend : "Node",
+            database : "MongoDB"
+        };
+        document.write("***********","<br>");
+
+        //Solution 1 (.)
+        let frontend_data = obj1.frontend;
+        document.write(frontend_data,"<br>");
+        document.write(obj1.backend,"<br>");
+        document.write(obj1.database,"<br>");
+
+        document.write("***********","<br>");
+        //solution ([])
+        var front = obj1['backend']
+        document.write(front,"<br>");
+        document.write(obj1['frontend'],"<br>");
+        document.write(obj1['database'],"<br>");
+
+        document.write("***********","<br>");
+        //solution 3 (destructing) (ES6)
+        let {frontend,backend,database} = obj1;
+        document.write(frontend,"<br>",backend,"<br>",database,"<br>");
+        document.write("***********","<br>"); 
+        //Solution 4 for ... in loop
+        for (let key in obj1)
+        {
+            document.write(obj1[key],"<br>");
+        }
+
+        const obj2 = {
+            frontend : "React",
+            backend : "Node",
+            database : "MongoDB"
+        };
+        document.write("***********","<br>"); 
+        //obj2={};
+        obj2.frontend = "ReactJS";
+        obj2.stack = "MERN Stack";
+
+        for (let key in obj2)
+        {
+            document.write(obj2[key],"<br>");
+        }
+
+        function db_func(){
+           return "Hello";
+        }
+        document.write("***********","<br>");
+        let msg = db_func();
+        document.write(msg);
+        document.write("<br>");
+
+        function db_func1(param1){
+           document.write(`soon we will connect with you , ${param1}`);
+        }
+        document.write("***********","<br>");
+        let msg1 = db_func1(`Mythrayee`);
+        document.write("<br>");
+        
+        let function_expression = function(param1){
+           document.write(`soon we will connect with you , ${param1}`);
+        }
+
+ document.write("***********","<br>");
+ function_expression(`Mythrayee`);
+
+ 
+
+    </script>
+</body>
+</html>

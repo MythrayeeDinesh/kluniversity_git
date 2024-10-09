@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Basics</title>
+</head>
+<body>
+    <script>
+        var x = 100;
+        var x = 200;
+        document.write(x,"<br/>");    // 200
+
+        // let y1 = 100;
+        // let y1 = 200;  // Commented out to avoid error
+        // document.write(y1);
+
+        let x1 = 100;
+        {
+            let x1 = 200;
+            document.write(x1,"<br/>");  // 200 (local scope)
+        }
+        document.write(x1,"<br/>");  // 100 (global scope)
+
+        document.write("10" - 8 + "3" - 5, "<br/>"); // Outputs -15
+
+        document.write(a, "<br/>"); // undefined
+        var a = "KL University";
+
+        // document.write(b, "<br/>"); // Will throw a ReferenceError
+        let b = "KL University";
+        document.write(b, "<br/>"); // Now this works
+
+        function klu_func(){
+            var x2 = 100;
+            {
+                let y2 = 200;
+            }
+            document.write(x2,"<br/>");
+            document.write(x2,"<br/>");
+        }
+
+        klu_func();
+
+        let msg=`FSD With DevOPs`;
+        let wish=`Welcome to ${msg}`;
+        document.write(wish);
+        document.write(wish.substr(0,15));
+
+        let xy=123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789
+        123456789123456789123456789123456789123456789
+        123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789
+        123456789123456789123456789123456789123456789123456789123456789n;
+
+        document.write(xy);
+
+
+        // let literal = Symbol("KLuniversity");
+        // document.write(literal);
+
+        var xer;
+        document.write(xer,"<br>"); //undefined
+        document.write(xer + 10,"<br>"); //NaN
+
+        var ger = null;
+        document.write(ger,"<br>");
+        document.write(ger + 10,"<br>");  //10
+
+        //typeof
+        document.write(typeof "KKLuniv","<br>");
+        document.write(typeof 100,"<br>");
+        document.write(typeof true,"<br>");
+        document.write(typeof null,"<br>");   //object
+        document.write(typeof 100n,"<br>");
+        document.write(typeof Symbol(100),"<br>");
+        document.write(typeof [],"<br>");     //object
+        document.write(typeof {},"<br>");      //object
+        document.write(typeof function flu_kl(){},"<br>");   //function
+        
+
+
+    </script>
+</body>
+</html>

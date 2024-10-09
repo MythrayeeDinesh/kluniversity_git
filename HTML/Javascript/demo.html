@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-    <script>
-        document.write("Welcome to KLU","</br>");
-        console.log("debugging tool,console");
-        console.table([10,20,30,40,50]);
-
-        document.write(10+"10","<br>");
-
-        document.write(10+ +"10","<br>"); //20
-
-        document.write(1+ +"2"+ +"10","<br>");
-
-        document.write(10 - "10","<br>");
-        document.write(10 * "10","<br>");
-        document.write(10 / "10", "<br>");
-
-        document.write(10 / "0", "<br>");
-        document.write(10 / "A", "<br>");
-
-        document.write(10 == "10","<br>"); //only value
-        document.write(10 === "10","<br>"); //value with datatype
-
-        document.write(0.1 + 0.2,"<br>");
-        document.write(0.1 + 0.2 == 0.3,"<br>");
-        document.write(0.1 + 0.2 === 0.3,"<br>");
-    </script>
+    <title>JS Basics</title>
 </head>
 <body>
-    
+    <script>
+        document.write("Welcome to KL University","<br>"); //Go Live
+
+        console.log("debugging soon..."); //See the mentioned text in ctrl+shit+i -> console
+
+        console.table([10,20,30,40,50]); //See the table in ctrl+shit+i -> console
+
+        document.write(10+"10", "<br/>"); //1010
+
+        document.write(10+ +"10", "<br/>"); //20
+
+        document.write(1+ +"2"+ +"10","<br/>") //13
+
+        document.write("1"+ +"2"+ +"10","<br/>") //1210
+
+        document.write(10 - "10", "<br/>"); //20 - Facility called as Type Quortion in Javascript which is available from Java 6 onwards
+
+        document.write(10 * "10", "<br/>"); //100 - Facility called as Type Quortion in Javascript which is available from Java 6 onwards
+
+        document.write(10 / "10", "<br/>"); //1 - Facility called as Type Quortion in Javascript which is available from Java 6 onwards
+
+        document.write(10 / "0", "<br/>"); //Infinity - Facility called as Type Quortion in Javascript which is available from Java 6 onwards
+
+        document.write(10 / "A", "<br/>"); //NaN - Invalid Operation (Not a Number)
+
+        //= (assignement)
+        //== (comaprision Values ignore datatype)
+        //===(strict comaprision) (Values with datatype)
+
+        document.write (10 == "10","<br/>"); //true
+
+        document.write (10 === "10","<br/>"); //false bcz compare datatype also
+
+        //true -- 1
+        //false -- 0
+        document.write(true+1,"<br/>"); //2
+        document.write(true/false,"<br/>"); //Infinity
+        document.write(1+"true","<br/>"); //1True
+        document.write(true+1-"1","<br/>"); //1
+
+        document.write(10+5 / 10-5, "<br/>"); //5.5
+
+        //BODMAS Rule
+        //B - BRACKET
+        //O - OF
+        //D - DIVISION
+        //M - MULTIPLICATION
+        //A - ADDITION
+        //S - SUBRACTION
+
+        document.write((10+5) / (10-5),"<br/>");
+
+        //ternary operator
+
+        //conditon ? block1 : block2
+        9>8>7?document.write("JAVE FULL STACK"):document.write("JAVE FULL STACK WITH DEVOPS"); //JAVE FULL STACK WITH DEVOPS
+        
+
+
+
+    </script>
 </body>
 </html>
