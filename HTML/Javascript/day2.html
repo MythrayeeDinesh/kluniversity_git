@@ -92,10 +92,40 @@
            document.write(`soon we will connect with you , ${param1}`);
         }
 
- document.write("***********","<br>");
- function_expression(`Mythrayee`);
+        document.write("***********","<br>");
+        function_expression(`Mythrayee`);
+        document.write("<br>");
 
- 
+        let arrow_function = ()=>{
+           document.write(`soon we will connect with you`);
+        }
+
+        document.write("***********","<br>");
+        arrow_function();
+        document.write("<br>");
+        let arrow_functiononeReturn =()=>
+           `soon we will connect with you`;
+        
+
+        document.write("***********","<br>");
+        document.write(arrow_functiononeReturn());
+        document.write("<br>");
+
+        let arrow_functionOneparameter = param1=>
+           `soon we will connect with you , ${param1}`;
+        
+
+        document.write("***********","<br>");
+        arrow_functionOneparameter("Mythrayee");
+ document.write("<br>");
+        
+        let undefined_parameter = (param1,param2) => {
+           document.write(param1,param2);
+        }
+
+        document.write("***********","<br>");
+       
+        document.write( undefined_parameter(100,200),"<br>");
 
     </script>
 </body>
